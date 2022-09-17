@@ -1,0 +1,321 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(248, 246, 246);
+
+}
+/* inicio nav bar */
+nav {
+  padding:  0 4em;
+  z-index: 100;
+  font-size: 1em;
+  
+}
+nav img {
+  width: 33%;
+  
+}
+.navbar-brand {
+  font-size: 1.5em;
+  
+}
+.navbar-toggler-icon,
+.navbar-toggler,
+.navbar-nav {
+  color: rgb(217, 255, 47) !important;
+  background-color: #212529;
+  align-items: center;
+  border-radius: 20px;
+  z-index: 200;
+}
+.navbar-toogle-icon,
+.navbar-toggler {
+  border-radius: 10px;
+  margin-right: 2em;
+}
+a:hover {
+  color: #94ca3d !important;
+  text-decoration: underline;
+}
+
+/* fin nav bar */
+
+/* seccion sliders */
+.banner {
+  border: solid red;
+}
+.sliders {
+  /* border: solid blue; */
+  position: relative;
+  width: 100%;
+}
+
+/* opacidad de la foto  */
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* botones del slider */
+.btn-ban-izq {
+  color: rgb(198, 208, 216);
+  border-color: #fff;
+}
+.btn-ban-izq:hover {
+  background: rgb(93, 173, 56);
+  border: none;
+  box-shadow: white 0px 0px 10px;
+}
+.btn-ban-der {
+  border-color: rgb(150, 200, 67);
+  width: 25%;
+}
+.btn-ban-der:hover {
+  color: #cacdd1;
+  border-color: green;
+  background: crimson;
+  box-shadow: white 0px 0px 10px;
+}
+
+/* inicio oradores  */
+.card:hover, 
+.contenedor:hover{
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.contenedor{
+  padding: 1em;
+}
+h3:hover{
+  color: crimson;
+}
+h2 span {
+  color: rgb(20, 14, 14);
+  font-size: 0.5em;
+}
+
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+
+.texto {
+ /*  height: 70vh; */
+  background-color: #343a40;
+  padding: 1em;
+  border-left: #5e6368 solid 3px;
+}
+.lugar .btn {
+  /* color: rgb(198, 208, 216);
+  border: solid 1px rgb(198, 208, 216); */
+}
+.lugar .btn:hover {
+  color: #cacdd1;
+  border-color: green;
+  background: none;
+  box-shadow: white 0px 0px 10px;
+}
+/* fin seccion pantalla dividida  */
+
+/* decoracion de texto seccion formulario */
+.dott {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  font-size: 1em;
+}
+
+/* inicio formulario */
+
+.contenedor {
+  width: 70%;
+  margin: auto;
+}
+form .btn {
+  background-color: #94ca3d;
+  width: 100%;
+  border: none;
+}
+textarea::placeholder {
+  font-size: 1.2em;
+}
+
+/* inicio footer */
+footer {
+  background: linear-gradient(to right, rgb(21, 40, 49) 50%, rgb(27, 92, 129));
+}
+.link-footer {
+  width: 80%;
+  margin: auto;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5em 0px;
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 468px) {
+  body {
+    margin: 1em;
+  }
+  h1 {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+
+    font-size: 1.5em;
+  }
+  .textos-entrada {
+    background-color: #212529;
+    padding: 1em;
+  }
+  p {
+    font-size: 0.8em;
+    text-align: center;
+    color: black;
+    padding: 1em;
+  }
+  .btn {
+    margin: auto;
+    width: 100%;
+  }
+  .card {
+    margin: auto;
+    border-bottom: #212529;
+  }
+}
+
+@media only screen and (min-width: 469px) and (max-width: 575px) {
+  .textos-entrada {
+    position: absolute;
+    top:25%; 
+    right: 5%;
+  }
+  .textos-entrada h1 {
+    font-size: 1.2em;
+    text-align: end;
+  }
+  p {
+    font-size: 0.6em;
+    text-align: end;
+    
+  }
+  
+    .btn {
+      width: 50%;
+      text-align: center;
+      height: 2em;
+      font-size: 1em;
+      margin: auto;
+    }
+  
+  .btn-slide {
+    /* display: inline-flex;
+    flex-direction: row;
+    justify-content: center; */
+  }
+  .card {
+    width: 80%;
+    margin: auto;
+    border-bottom: #212529;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .textos-entrada {
+    width: 80%;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+  }
+  p {
+    font-size: 0.8em;
+    
+    
+  }
+  .card {
+    width: 80%;
+    margin: auto;
+    border-bottom: #212529;
+  }
+  .btn {
+    width: 35%;
+    text-align: center;
+    height: 2em;
+    font-size: 1em;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .textos-entrada {
+    width: 60%;
+    height: 70vh;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+  }
+  .textos-entrada h1 {
+    font-size: 2.3em;
+    text-align: end;
+  }
+  p {
+    font-size: 1em;
+    text-align: end;
+    color: white;
+  }
+  .card {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .sliders,
+  .carousel-item {
+    height: 100vh !important;
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+  }
+  .textos-entrada {
+    width: 50%;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    /*  width: ; */
+  }
+  .textos-entrada h1 {
+    font-size: 3em;
+    text-align: end;
+  }
+  p {
+    font-size: 1.5em;
+    text-align: end;
+    color: white;
+  }
+  .btn {
+    width: 35%;
+    text-align: center;
+    height: 3em;
+    font-size: 1.2em;
+  }
+
+  .tarjetas {
+    width: 80%;
+    margin: auto;
+  }
+  .card {
+    width: 90%;
+  }
+  .contenedor {
+    width: 50%;
+  }
+}
